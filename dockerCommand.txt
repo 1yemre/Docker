@@ -5,6 +5,16 @@ docker info
 
 exC:docker image --help
 exC:docker image rm --help
+docker container logs  (Container ID)
+docker container run --name denemecon ozgurozturknet/adanzyedocker java app1
+docker container stop  (Container ID)
+docker container run -d -p 80:80 ozgurozturknet/adanzyedocker
+docker container ps(same as ls)  
+docker container ps -a (same as ls -a)
+docker container rm  ID  (Delet Container)
+docker container rm ID (force deletion)
+
+
 
 
 
