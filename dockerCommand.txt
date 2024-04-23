@@ -1,6 +1,9 @@
 docker version 
 docker info
 
+NOT: Her Conatiner imajında o imajdan bir container oluşturduğumuz zaman varsayılan olarak çalışması için ayarlanmış bir uygulama vardır ve bu uygulama çalıştığı sürece container ayakta kalır. uygulama çalışmayı bıraktığında container da kapatılır.
+
+
 
 
 exC:docker image --help
@@ -8,11 +11,44 @@ exC:docker image rm --help
 docker container logs  (Container ID)
 docker container run --name denemecon ozgurozturknet/adanzyedocker java app1
 docker container stop  (Container ID)
-docker container run -d -p 80:80 ozgurozturknet/adanzyedocker
+docker container run -d -p 80:80 ozgurozturknet/adanzyedocker  (-d arka planda çalıştırırız)
 docker container ps(same as ls)  
 docker container ps -a (same as ls -a)
-docker container rm  ID  (Delet Container)
-docker container rm ID (force deletion)
+docker container rm  ID  (Delete Container)
+docker container rm -f ID (force deletion)
+docker container exec -it websunucu sh(A running container is connected with the exec command)
+sh --> connect to shall
+it  ->  --interactive + --ty => connect to interactive mode with
+docker  container  prune ->  Deletes all containers that are not running in the system
+docker image prune -a  ->  Deletes all images in the system 
+exit -> We lost the connection to the container
+
+Volume::
+
+docker volume  create ilkvolume -> volume create
+docker volume inspect ilkvolume -> volume details
+docker container run -it(connect to interactive) -v(connect to volume) ilkvolume:/uygulama (We write the folder we want to connect to) alpine sh   
+                                                                       volume name : / (We write the folder we want to connect to)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
