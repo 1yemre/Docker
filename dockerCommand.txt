@@ -32,7 +32,8 @@ docker container run -it(connect to interactive) -v(connect to volume) ilkvolume
 
 
  
-
+docker container run  --rm -it ozgurozturknet/adanzyedocker sh
+                      (--rm => konteynar kapatıldığı zaman sil)
 
 
 
