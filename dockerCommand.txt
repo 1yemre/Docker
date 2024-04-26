@@ -38,6 +38,23 @@ docker container run  --rm -it ozgurozturknet/adanzyedocker sh
 
 
 
+Bind Mounts :  (sadece development yapılırken kullanılır.)
+
+docker container run -d -p 80:80 -v  C:\Users\EMRE\Documents\Docker\kisim3\bolum28\websitesi:/usr/share/nginx/html nginx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
