@@ -1,0 +1,15 @@
+Docker Commands
+docker info
+docker ps    -> All container list
+docker ps -a -> All containers that are stopped
+docker run  centos:7 echo "hello world"
+docker run  centos:7 ps -ef  =  docker container ls-a
+docker container run -it centos:7 bash  -> container create
+docker container start  (container Id)  -> container start
+docker  container exec -it c555(container Id) bash  -> container connection
+
+
+
+
+
+
