@@ -7,6 +7,16 @@ docker run  centos:7 ps -ef  =  docker container ls-a
 docker container run -it centos:7 bash  -> container create
 docker container start  (container Id)  -> container start
 docker  container exec -it c555(container Id) bash  -> container connection
+docker container ls -a --no-trunc   ->  detials container ıd
+docker container ls -a -q  -> container ID liST
+docker container ls -a -l  -> last created container
+docker container ls -a --filter "" -> container list 
+docker container run centos:7 ping 127.0.0.1 -c 10
+docker container  logs --tail 10 e632
+ docker container logs -f e632
+
+
+ 
 
 
 
