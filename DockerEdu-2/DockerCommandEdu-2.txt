@@ -13,10 +13,29 @@ docker container ls -a -l  -> last created container
 docker container ls -a --filter "" -> container list 
 docker container run centos:7 ping 127.0.0.1 -c 10
 docker container  logs --tail 10 e632
- docker container logs -f e632
+docker container logs -f e632
+docker container run -d(detached  mode) tomcat
+docker container start -a b2e  (container conneciton)
+docker container  logs -f b2e
+docker container kill b2e 
+docker container inspect b2e  (container details) 
+docker container inspect b2e | grep IPAddress  
+docker container rm b2e (container delete)
+
+port mapping:::
+
+docker container run -d -p  5000(fiziksel host üzerinden containera erişim için gerekli):80(direkt container portuna erişim istiyorsak)
+docker container run -d -p 5000:80 nginx
+docker container port 2dd  -> gives which port is open
 
 
- 
+notepad (vi) Dockerfile
+docker image build -t my nginx
+docker image build -t my_nginx .
+
+
+
+docker plugin:::
 
 
 
