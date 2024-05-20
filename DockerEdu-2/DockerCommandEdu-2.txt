@@ -37,6 +37,24 @@ docker image build -t my_nginx .
 
 docker plugin:::
 for information  details =>https://docs.docker.com/engine/extend/plugins_graphdriver/
+ 
+
+docker plugin install  grafana/loki-docker-driver
+docker plugin ls 
+
+docker plugin disable grafana/loki-docker-driver:latest -> pluging disable 
+docker plugin enable grafana/loki-docker-driver:latest -> pluging enable 
+docker plugin ins  -> docker plugin COMMAND
+docker plugin inspect  grafana/loki-docker-driver  -> plugin info 
+docker plugin rm grafana/loki-docker-driver:latest  -> plugin remove 
+
+
+docker search mysql -> images version
+docker search alpine 
+
+
+
+
 
 
 
