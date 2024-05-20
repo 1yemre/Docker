@@ -36,6 +36,9 @@ docker image build -t my_nginx .
 
 
 docker plugin:::
+for information  details =>https://docs.docker.com/engine/extend/plugins_graphdriver/
+
+
 
 
 
