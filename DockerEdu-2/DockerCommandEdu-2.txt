@@ -52,14 +52,22 @@ docker plugin rm grafana/loki-docker-driver:latest  -> plugin remove
 docker search mysql -> images version
 docker search alpine 
 
+Docker File Comments:
 
 
+vi Dockerfile -> new docker file 
 
-
-
-
-
-
-
-
+from centos -> base image
+run -> prosess playing 
+cmd
+label -> bir key , imaj sahibini detayı yada bir value değeri için 
+maintainer      ->  dirkt dockerfile dosyasında oluşturulan kişi ile ilgili bilgi vermek için  oluşturan kişi hakkında isim mail adresi vs.
+expose -> containerde port numarsı açmak için kullanılır.
+env -> container  ortam değişkeni tanımlamak için kullanılır.
+add -> conatiner içerisine internetten yada local bir alandan dosya kopyalamaya yardımcı olur. 
+copy -> belirtilen dosyaları dirket container içerisine kopyalar add den farkı  herhangi bir kaynaktan dosya  kopyalar
+entrypoint -> container çalıştığında varsayılan parametre tanımalamk için  kullanılır. kısa paramterleri sabitlemk için 
+volume-> volume path taınmlamak için kullanılır.
+user ->  hangi kullanıcı üzerinde işlem yapılacaksa  belirtmek için kullanılır. (kullanıcı tanımlaması )
+workdir -> containerlarin  çalışma dizinin belirtmek için kullanılır.
 
